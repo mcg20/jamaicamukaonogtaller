@@ -1,0 +1,341 @@
+.laboratory-page {
+  padding: 0px;
+}
+
+.lab-content {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Services (left) takes up 3 parts, receipt (right) 1 part */
+  gap: 50px; /* Add space between the columns */
+  width: 100%;
+  max-width: 1400px; /* Larger maximum width */
+}
+
+.services-column {
+  width: 100%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Wider services column, 2 services per row */
+  gap: 20px;
+}
+
+.service-category {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.test-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.test-item:hover {
+  background-color: #e0e0e0;
+}
+
+.test-item.selected {
+  background-color: #3353a1;
+  color: white;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3353a1;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative; /* This is needed for positioning the checkmark */
+}
+
+.checkbox.checked {
+  background-color: #3353a1;
+}
+
+.checkbox.checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px; /* Adjust size of the checkmark */
+}
+
+.test-name {
+  font-size: 1rem;
+}
+
+.test-price {
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap; /* Ensure the price remains in one line */
+}
+
+/* Laboratory Packages */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  gap: 20px;
+}
+
+.package-item {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.package-item:hover {
+  background-color: #e0e0e0;
+}
+
+.package-item.selected {
+  background-color: #3353a1;
+  color: white;
+}
+
+.package-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.package-details {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.package-price {
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap; /* Ensure the price remains in one line */
+}
+
+/* Receipt Column Styling */
+.receipt-column {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px; /* Adjust to your desired top spacing */
+  height: fit-content;
+  width: 300px; /* Reduce the width of the receipt column */
+}
+
+.receipt-column h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.receipt-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.receipt-column li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.receipt-column p {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+.receipt-column h4 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  background-color: #3353a1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #3a0404;
+}
+
+.next-btn:disabled {
+  background-color: #aaa; 
+  cursor: not-allowed;
+}
+
+.panels-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  gap: 20px;
+}
+
+.panel-item {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-item:hover {
+  background-color: #e0e0e0;
+}
+
+.panel-item.selected {
+  background-color: #3353a1;
+  color: white;
+}
+
+.panel-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.panel-tests {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.panel-tests li {
+  font-size: 0.9rem;
+}
+
+.panel-price {
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for medium screens */
+  }
+
+  .content-container {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+
+  .receipt-column {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+  }
+}
+
+.progress-bar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.progress-step {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%; /* Makes it circular */
+  background-color: #d3d3d3; /* Default inactive color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.progress-step.active {
+  background-color: #3353a1; /* Highlight active step */
+}
+
+.progress-step.done {
+  background-color: #3353a1; /* Color for completed steps */
+  border-color: #3353a1 ;
+}
+
+.progress-step:disabled {
+  background-color: #aaa; /* Disabled step color */
+  cursor: not-allowed;
+}
+
+.progress-step:hover:not(:disabled) {
+  background-color: #9c7f7f; /* Hover effect for enabled steps */
+}
+
+
+
+
+
+
+button1 {
+  padding: 5px 10px;
+  margin: 100 100px;
+  border: none;
+  background-color: #b6a5a5e8;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 440px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 774px;
+}
+
+
+button1:hover {
+  background-color: #b6a5a5e8;
+}
+
+
+button2 {
+padding: 5px 10px;
+margin: 100 100px;
+border: none;
+background-color: #3353a1;
+color: white;
+border-radius: 4px;
+cursor: pointer;
+align-items: center;
+margin-left: 50px;
+
+}
+
+
+button2:hover {
+background-color: #1a1a1a;
+}

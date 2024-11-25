@@ -1,0 +1,124 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 255, 255); /* White background */
+}
+
+.login-form-card {
+  display: flex;
+  background-color: rgb(211, 211, 211); /* Light gray background */
+  width: 600px; /* Adjusted width for the login form */
+  height: 500px; /* Increased height for the login form */
+  border-radius: 16px; /* Rounded edges */
+  overflow: hidden; /* To ensure the rounded edges are effective */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-form-left {
+  flex: 1;
+  padding: 40px;
+  display: flex; /* Use flex for better alignment */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+}
+
+.login-form-left h2 {
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  text-align: center; /* Centering the title */
+}
+
+.input-group1 {
+  margin-bottom: 20px; /* Increased spacing between input fields */
+  margin-right: 250px;
+}
+.belowinput{
+  padding-top: 0px;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.input-group1 input {
+  width: 220%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.forgot-password {
+  display: block; /* Make it a block element */
+  text-align: right; /* Align text to the right */
+  font-size: small;
+  margin-top: 5px; /* Add some space above */
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+.login-btn {
+  background-color: #9c2324;
+  color: white;
+  padding: 12px; /* Increased padding for button */
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-form-right {
+  flex: 1;
+  position: relative; /* For absolute positioning of overlay */
+}
+
+.contact-info {
+  position: relative; /* Positioning for the overlay */
+}
+
+.login-image {
+  display: block; /* Ensures the image is responsive */
+}
+
+.overlay {
+  position: absolute; /* Position the overlay on top of the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for overlay */
+  color: white; /* Text color */
+  font-size: small;
+  padding: 10px; /* Padding for text */
+  margin-top: 45px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+  align-items: center; /* Center text horizontally */
+  border-radius: 16px; /* Match the card rounded edges */
+}
+.overlay p {
+  margin: 0; /* Remove default margin */
+  line-height: 1.5; /* Adjust line height for less spacing */
+}
+
+.learn-more-btn {
+  background-color: transparent; /* Make the button transparent */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  border: 1px solid white; /* White border */
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-right: 165px;
+  cursor: pointer;
+  font-weight: bold; /* Make the text bold */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+
+}
+
+.learn-more-btn:hover {
+  background-color:  #3353a1; /* Background color on hover */
+  color: white; /* Keep text color white on hover */
+}

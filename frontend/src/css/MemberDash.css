@@ -1,0 +1,64 @@
+html, body {
+    height: 100%; /* Make sure the html and body take the full height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .member-dashboard {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .dashboard-header {
+    
+    color: white;
+ 
+    text-align: center;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex: 1; /* Allow this section to grow and fill available space */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .sidebar {
+    width: 200px; /* Fixed width for sidebar */
+    background-color: #f4f4f4; /* Light background for sidebar */
+    padding: 10px;
+    border-right: 2px solid #ccc; /* Border for separation */
+    overflow-y: auto; /* Allow sidebar to scroll if needed */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    background-color: #3352a190; /* Hover effect */
+  }
+  
+  .active {
+    background-color: #3353a1; /* Active tab color */
+    color: white; /* Text color for active tab */
+  }
+  
+  .dashboard-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Allow content to scroll */
+    max-height: calc(100vh - 60px); /* Adjust based on header height */
+  }
+  
+  .dashboard-footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }

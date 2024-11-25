@@ -1,0 +1,101 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(255, 255, 255);
+}
+
+.login-form-card {
+  display: flex;
+  background-color:  rgb(211, 211, 211);
+  width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.login-form-left {
+  flex: 1;
+  padding: 40px;
+  text-align: center; /* Center align the text */
+}
+
+.login-form-left h2 {
+  margin: 0; /* Remove default margin */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 24px; /* Adjust the font size if needed */
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-btn {
+  background-color: #9c2324;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-form-right {
+  flex: 1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-info {
+  color: black; /* Change to desired color */
+}
+
+.learn-more-btn {
+  background-color: white;
+  color: #9c2324;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+footer {
+ 
+  color: #9c2323ce; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Space around the text */
+  position: relative; /* Positioning if needed */
+  bottom: 0; /* Stick to the bottom of the page */
+  width: 100%; /* Full width */
+  
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Adjust font size */
+}

@@ -1,0 +1,425 @@
+/* General layout styling */
+.landing-header {
+  background-color: #3353a1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.coop-logo {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.second-logo {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.landing-header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.landing-header nav ul li {
+  margin: 0 15px;
+}
+
+.landing-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.landing-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* New style for header image */
+.header-image {
+  width: 100%; /* Ensure the image takes full width of the viewport */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures there's no space below the image */
+  position: sticky;
+  top: 0;
+  z-index: 1000
+}
+
+
+/* Main container */
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y:visible; /* Makes the entire content scrollable */
+  max-height: 100vh; /* Ensures the content fits within the viewport */
+}
+
+/* Each content section */
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+  position: relative; /* Allow for pseudo-element overlay */
+}
+
+.image-section {
+  flex: 1;
+  margin-right: 20px;
+  position: relative; /* Make the image container position relative */
+  overflow: hidden; /* Ensure the pseudo-element stays inside the image bounds */
+}
+
+.text-section {
+  margin-left: 20px;
+  flex: 1;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.content-image {
+  width: 100%;
+  max-width: 5000px;
+  height: auto;
+  display: block;
+}
+
+/* Red transparent overlay on hover */
+.image-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 53, 152, 0.5); /* Red with transparency */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-section:hover::before {
+  opacity: 1; /* Show red overlay on hover */
+}
+
+/* Reverse layout for even sections */
+.content-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.read-more-btn {
+  background-color: #3353a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #3353a1;
+}
+
+  
+  /* Footer styling */
+  .footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 300px; /* Add margin to ensure spacing between footer and content */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure proper layout on smaller screens */
+  }
+  
+  .footer-left {
+    padding: 0 20px;
+    flex: 1;
+  }
+  
+  .footer-left p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-logo {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #999;
+  }
+  
+  .footer-bottom a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-bottom a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+   /* Responsive design */
+   @media screen and (max-width: 768px) {
+    .content-section {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+ 
+    .image-section {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+ 
+    .content-image {
+      max-width: 100%;
+    }
+  }
+ 
+  .log-btn {
+    background-color: white; /* Button color */
+    color: #3353a1;; /* Font color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 4px 18px; /* Padding for top/bottom and left/right */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 15px; /* Spacing between the button and the previous link */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+ 
+  .log-btn:hover {
+    font-weight: bold;
+  }
+ 
+ 
+  .profile-btn {
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Center the image */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-left: 15px; /* Spacing from other menu items */
+  }
+ 
+  .profile-icon {
+    width: 30px; /* Increased size */
+    height: 30px; /* Increased size */
+    border-radius: 50%; /* Circular profile logo */
+    object-fit: cover; /* Cover the button */
+    transition: transform 0.2s; /* Animation on hover */
+    margin-right: 20px;
+  }
+ 
+  /* Optional: Add hover effect */
+  .profile-btn:hover .profile-icon {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 10000%;
+    max-width: 1100px; /* Adjust to match desired image size */
+    margin: 0 auto;
+}
+
+
+.image-section {
+    width: 1000%;
+    height: 600px; /* Consistent height for images */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.content-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* For debugging, display arrows without needing hover */
+.carousel-arrow {
+  background: rgba(0, 0, 0, 0);
+  color: #3353a1;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%;
+  display: block; /* Temporarily make arrows visible */
+}
+
+
+
+
+/* Show arrows on hover */
+.image-section:hover .carousel-arrow {
+    display: block;
+}
+
+
+.left-arrow {
+    left: 15px;
+}
+
+
+.right-arrow {
+    right: 40px;
+}
+
+
+.text-section {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px; /* Match image width for alignment */
+    margin-left: 0px;
+ 
+}
+
+
+.read-more-btn {
+    background-color: #3353a1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Hover Preview styling */
+.preview-hover-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the preview */
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.image-section:hover .preview-hover-area {
+  opacity: 1;
+}
+
+
+/* Style for individual preview boxes with added spacing */
+.preview-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 15px;  /* Adjust margin for spacing between the boxes */
+  padding: 20px;
+  width: 200px;  /* Adjust size of boxes */
+  height: auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.preview-overlay:hover {
+  transform: scale(1.1);  /* Slightly enlarge on hover */
+}
+
+
+/* Style for service name */
+.preview-overlay h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Style for the price */
+.preview-overlay p {
+  font-size: 12px;
+  color: #333;
+  margin-top: 5px;
+}
+
+
+.preview-overlay ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+
+.preview-overlay ul li {
+  font-size: 12px;
+  color: #333;
+}

@@ -1,0 +1,381 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the page takes up full width */
+    height: 100%; /* Ensure the body takes full height */
+}
+
+
+
+
+
+
+
+
+/* General layout styling */
+.admin-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0px;
+}
+
+
+
+
+/* Header styling */
+.landing-header {
+    background-color: #3353a1;
+    color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px; /* Reduced padding */
+}
+
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.coop-logo {
+    width: 80px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+
+
+
+.second-logo {
+    width: 200px;
+}
+
+
+
+
+.landing-header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+}
+
+
+
+
+.landing-header nav ul li {
+    margin: 0 15px;
+}
+
+
+
+
+.landing-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+
+}
+
+
+
+
+.landing-header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Dashboard title */
+.dashboard-title {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+
+
+.dashboard-title h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+
+
+
+/* Services Section Styling */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    color: #1a1a1a;
+    background-color: white;
+}
+.servi{
+    padding: 20px;
+}
+
+
+
+
+h2 {
+    color: #3353a1;
+}
+
+
+
+
+.search-bar {
+    width: 72%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    height: 10px;
+    margin-left: 0;
+}
+
+
+
+
+/* New container for each table-form pair */
+.table-form-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the table and form */
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+
+
+.services-table,
+.packages-table {
+    border-collapse: collapse;
+    width: 1200px;
+    table-layout: fixed;
+}
+
+
+
+
+.services-table th,
+.packages-table th,
+.services-table td,
+.packages-table td {
+    border: 1px solid #1a1a1a;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+
+th {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    background-color: #3353a1;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+button:hover {
+    background-color: #1a1a1a;
+}
+
+
+
+
+/* Adjust the form container width */
+.add-service-form,
+.add-package-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    width: 350px; /* Adjust the width for the form */
+}
+
+
+
+
+/* Ensure input fields are the same size across the forms */
+input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+}
+
+
+
+
+/* Adjust the table container to fill the remaining space */
+.table-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+
+
+.form-container {
+    flex: 1;
+    max-width: 500px; /* Ensure the form doesn't take too much space */
+}
+
+
+
+
+/* Optional: Make pagination buttons more evenly spaced */
+.pagination button {
+    padding: 5px 12px;
+    margin: 0 5px;
+}
+
+
+
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+/* Footer section */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0; /* Reduced padding */
+    margin-top: 40px;
+}
+
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 px;
+}
+
+
+
+
+.footer-left {
+    flex: 1;
+}
+
+
+
+
+.footer-left p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+
+.footer-section li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #999;
+}
+
+
+
+
+.footer-bottom a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
+
+.footer-bottom a:hover {
+    color: white;
+    text-decoration: underline;
+}

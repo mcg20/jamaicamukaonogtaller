@@ -1,0 +1,208 @@
+/* General styling for Admin Page */
+.admin-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+
+.admin-header {
+  background-color:  #3353a1; /* Use the same background color as the landing page */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+
+.admin-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.admin-header nav ul li {
+  margin: 0 15px;
+}
+
+
+.admin-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+
+.admin-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Admin content styling */
+.admin-content {
+  padding: 90px 40px 110px; /* Remove bottom padding */
+  background-color: white;
+  margin-bottom: 0; /* Ensure there's no margin at the bottom */
+}
+
+
+.dashboard-section h2 {
+  color:  #3353a1; /* Header matching landing page */
+  font-size: 2rem;
+}
+
+
+.dashboard-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
+.admin-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.action-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+
+.action-box1 {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  margin-left: 30px;
+}
+
+
+.action-box h3 {
+  font-size: 1.3rem;
+  color:  #3353a1; /* Use the same color for headings */
+  margin-bottom: 10px;
+}
+
+
+.action-box1 h3 {
+  font-size: 1.3rem;
+  color:  #3353a1; /* Use the same color for headings */
+  margin-bottom: 10px;
+}
+
+
+.action-box p {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+
+.action-box1 p {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+
+.action-btn {
+  background-color:  #3353a1;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+
+.action-btn:hover {
+  background-color:  #203876; /* Darker shade on hover */
+}
+
+
+.logout-btn {
+  background-color: white; /* Button color */
+  color:  #3353a1;; /* Font color */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 4px 18px; /* Padding for top/bottom and left/right */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 15px; /* Spacing between the button and the previous link */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+
+.logout-btn:hover {
+  font-weight: bold;
+}
+
+
+.dashboard-header h1 {
+  font-size: 0.8rem; /* Set font size */
+  color: #9c232300;    /* Set font color */
+  background-color: transparent; /* Remove background color */
+  margin: 0; /* Ensure no additional space around it */
+  padding: 0; /* Remove any padding if present */
+}
+
+
+
+
+/* Footer styling */
+.footer {
+  background-color: #1a1a1a; /* Footer color same as landing page */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+.footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .admin-actions {
+    flex-direction: column;
+  }
+
+
+  .action-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.dashboard-title h1 {
+  font-size: 1.3rem;
+  color:  #3353a1;
+  text-align: center; /* Center-align if needed */
+  background-color: white; /* Set background to white */
+  padding: 10px; /* Add padding if you want space inside the background */
+  padding-top: 30px;
+  padding-bottom: 0;
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
